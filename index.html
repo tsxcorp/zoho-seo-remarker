@@ -36,20 +36,7 @@
                   // getExistedUser(initparams.loginUser);
                   userId = initparams.loginUser;
 
-                  await fetchUserCart();
-
-                  // test 
-                  await fetchProductHomepage('MKT');
-
-                  $('.multiple-items').slick({
-                      infinite: true,
-                      slidesToShow: 4,
-                      arrows: false,
-                      autoplay: true,
-                      autoplaySpeed: 2000,
-                  });
-
-                  $('#handleCounter').handleCounter()
+                  await fetchArticle();
 
                 })}
                 catch (err) {
